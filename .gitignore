@@ -7,3 +7,4 @@ extras/documentation
 /.vagrant
 /.buildpath
 /.project
+/vendor
