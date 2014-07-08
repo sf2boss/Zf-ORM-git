@@ -9,3 +9,4 @@ extras/documentation
 /.project
 /vendor
 /composer.lock
+/node_modules
