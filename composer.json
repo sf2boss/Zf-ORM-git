@@ -1,7 +1,13 @@
 {
-    "name" : "Zf-ORM",
-    "version" : "0.0.1",
-    "require" : {
-    	"zendframework/zendframework1" : "=1.12.7"
-    }    
+  "name" : "Zf-ORM",
+  "version" : "0.0.1",
+  "require" : {
+    "zendframework/zendframework1" : "=1.12.7",
+    "joseph-lenton/php-error" : "dev-master"
+  },
+  "autoload": {
+        "psr-0" : { 
+        	"Sflib" : "library\\sf2boss\\"        	        
+        }
+    }
 }
