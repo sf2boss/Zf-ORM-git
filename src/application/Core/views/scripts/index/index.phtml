@@ -1,1 +1,16 @@
+
+<?php $this->headTitle(APP_NAME." - Index");?>
+
 <h1>Index!</h1>
+
+<button id="test">TEST JS</button>
+
+<script>
+<?php $this->inlineScript()->captureStart()?>
+$(document).ready(function() { 
+	$('#test').on('click', function(){
+		alert("plopi");
+	});
+});
+<?php $this->inlineScript()->captureEnd()?>
+</script>
