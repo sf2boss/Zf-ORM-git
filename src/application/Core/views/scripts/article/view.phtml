@@ -1,0 +1,9 @@
+<?php if (false !== $this->article) { ?>
+
+<h1>Article N°<?=$this->article->getId()?></h1>
+
+<h3><?=$this->article->getTitle()?></h3>
+<pre><?=$this->article->getContent()?></pre>
+<pre><?=$this->article->getCategorie()->getNom()?></pre>
+
+<?php } else { echo "Article introuvable!"; } ?>

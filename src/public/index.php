@@ -14,7 +14,7 @@ define('APP_NAME', "Zf-ORM-git");
 
 //require_once LIB_PATH.DS."sf2boss".DS."sflib".DS."Error.php";
 require_once VENDOR_PATH.DS.'autoload.php';
-if ('development' === APP_ENV) {
+if ('development' !== APP_ENV) {
 	\php_error\reportErrors();
 } else {
 	set_exception_handler(array("Sflib\Error", "handleException"));

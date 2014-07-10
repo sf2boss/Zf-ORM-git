@@ -1,0 +1,15 @@
+<h1>Liste des articles</h1>
+
+
+<?php
+foreach ( $this->articles as $article ) {
+	?>
+
+<h1>Article N°<?=$article->getId()?></h1>
+
+<h3><a href="<?=$this->url(array('id'=>$article->getId()), 'coreArticleView') ?>"><?=$article->getTitle()?></a></h3>
+<pre><?=$article->getContent()?></pre>
+<hr />
+<?php
+}
+?>

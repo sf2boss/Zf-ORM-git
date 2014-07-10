@@ -1,13 +1,25 @@
 {
   "name" : "Zf-ORM",
   "version" : "0.0.1",
+  "repositories": [
+        {
+            "type": "pear",
+            "url": "pear.symfony-project.com"
+        },
+        {
+            "type": "pear",
+            "url": "pear.phpunit.de"
+        }
+    ],
   "require" : {
     "zendframework/zendframework1" : "=1.12.7",
-    "joseph-lenton/php-error" : "dev-master"
+    "joseph-lenton/php-error" : "dev-master",
+    "pear-pear.phpunit.de/phpunit": "3.5.15"
   },
-  "autoload": {
-        "psr-0" : { 
-        	"Sflib" : "library\\sf2boss\\"        	        
-        }
+  "autoload" : {
+    "psr-0" : {
+      "Sflib" : "library\\sf2boss\\",
+      "ZFExt" : "library\\ZFExt\\"
     }
+  }
 }

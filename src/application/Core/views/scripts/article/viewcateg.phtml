@@ -1,0 +1,12 @@
+<?php if (false !== $this->articles) { ?>
+<h1>Liste des articles de la categorie "<?=$this->articles[0]->getCategorie()->getNom()?>"</h1>
+<?php
+	foreach ( $this->articles as $article ) {
+		?>
+
+<h2>Article N°<?=$article->getId()?></h2>
+
+<h3><?=$article->getTitle()?></h3>
+<pre><?=$article->getContent()?></pre>
+
+<?php } } else { echo "Aucun article dans cette categorie!"; } ?>
